@@ -1,87 +1,80 @@
-### 📘 Estructura del README.md para tu proyecto de predicción de precios de casas
+# 🏡 Predicción de Precios de Viviendas
 
-Aquí tienes un borrador completo y limpio que puedes personalizar:
+Este proyecto consiste en predecir el precio de viviendas usando el conjunto de datos de **Ames Housing**, como parte de una competencia estilo Kaggle. Se utilizaron técnicas de preprocesamiento, ingeniería de características, selección de modelos y ajuste de hiperparámetros.
 
-```markdown
-# 🏡 Predicción de precios de casas - Kaggle House Prices
+![Feature Importance](feature_importance.png)
 
-Este proyecto usa técnicas de Machine Learning para predecir el precio de casas a partir de datos del famoso concurso de Kaggle ["House Prices: Advanced Regression Techniques"](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/).
+---
 
-## 📂 Estructura del proyecto
+## 📁 Estructura del Proyecto
 
+- `train.csv`: Datos de entrenamiento con el precio (`SalePrice`)
+- `test.csv`: Datos para predicción final
+- `notebook.ipynb`: Análisis completo y modelo
+- `requirements.txt`: Dependencias del entorno
+- `feature_importance.png`: Visualización de las características más importantes
 
-📦 house-prices-regression
-│
-├── data/
-│   ├── train.csv
-│   └── test.csv
-│
-├── notebooks/
-│   └── analysis.ipynb
-│
-├── models/
-│   └── best\_model.pkl
-│
-├── submission.csv
-├── requirements.txt
-└── README.md
-
-````
+---
 
 ## ⚙️ Tecnologías utilizadas
 
-- Python 3.10+
-- Pandas y Numpy para manipulación de datos
-- Scikit-Learn para preprocesamiento, modelado y validación
-- Seaborn y Matplotlib para visualización
-- Random Forest, Ridge y Lasso como modelos principales
+- Python
+- Pandas, NumPy
+- Matplotlib, Seaborn
+- Scikit-Learn
+- RandomForest, Ridge, Lasso, DecisionTree
+- Pipelines y ColumnTransformer
 
-## 🚀 Pasos realizados
+---
 
-1. **Análisis exploratorio:** manejo de valores nulos, outliers y distribución de precios.
-2. **Preprocesamiento:** imputación, codificación y escalado de variables.
-3. **Evaluación de modelos:** validación cruzada con métricas como RMSE.
-4. **Optimización:** búsqueda de hiperparámetros con `RandomizedSearchCV`.
-5. **Predicción final:** sobre el conjunto de test y generación del archivo `submission.csv`.
+## 🚀 Cómo ejecutar el proyecto
 
-## 🧠 Resultados
+1. **Clona el repositorio**:
 
-
-Modelo con mejor desempeño:
-- **Random Forest Regressor**
-- **RMSE (validación cruzada):** ~31025
-## Recta Y
-![Prediccion](img.png)
-
-
-## 📝 Cómo usar este repositorio
-
-1. Clona el repositorio:
-   ```bash
-   git clone https://github.com/TU_USUARIO/nombre-proyecto.git
-   cd nombre-proyecto
+```bash
+git clone https://github.com/Lemus2901/Price-housing.git
+cd Price-housing
 ````
 
-2. Crea un entorno virtual (opcional pero recomendado):
+2. **Crea un entorno virtual (opcional pero recomendado)**:
 
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # En Windows usa: venv\Scripts\activate
-   ```
+```bash
+python -m venv venv
+source venv/bin/activate  # En Windows: venv\Scripts\activate
+```
 
-3. Instala las dependencias:
+3. **Instala las dependencias**:
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+```bash
+pip install -r requirements.txt
+```
 
-4. Ejecuta los notebooks o scripts:
+4. **Ejecuta el notebook**:
 
-   ```bash
-   jupyter notebook
-   ```
+Abre el archivo `notebook.ipynb` en Jupyter Notebook o VS Code y sigue los pasos.
 
-## ✍️ Autor
+---
 
-* Andrés Felipe Lemus Victoria
-* Proyecto realizado como parte del aprendizaje de ciencia de datos
+## 📊 Resultados
+
+Se probaron varios modelos, y el mejor desempeño se logró con **Random Forest** ajustado con `RandomizedSearchCV`. El RMSE promedio fue de aproximadamente **31025.83** en validación cruzada.
+
+## Precio real vs precio predicho
+![Comparacion precio real vs precio predicho](img.png)
+
+
+---
+
+## 🧠 Autor
+
+**Andrés Felipe Lemus Victoria**
+
+Estudiante de Ingeniería de Sistemas, entusiasta de la ciencia de datos y la inteligencia artificial.
+
+---
+
+## 🌐 Repositorio
+
+[🔗 GitHub - Lemus2901/Price-housing](https://github.com/Lemus2901/Price-housing)
+*[Andres Felipe Lemus V](https://www.linkedin.com/in/andres-felipe-lemus-v-7943882a9/)*
+
