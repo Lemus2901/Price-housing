@@ -9,7 +9,6 @@ Este proyecto usa técnicas de Machine Learning para predecir el precio de casas
 
 ## 📂 Estructura del proyecto
 
-```
 
 📦 house-prices-regression
 │
