@@ -1,7 +1,3 @@
-¡Perfecto, Andrés! Ya que tienes el entorno listo y el `requirements.txt` hecho, retomemos la creación del `README.md`.
-
----
-
 ### 📘 Estructura del README.md para tu proyecto de predicción de precios de casas
 
 Aquí tienes un borrador completo y limpio que puedes personalizar:
